@@ -42,7 +42,7 @@ type Attachment struct {
 	AuthorIcon string  `json:"author_icon,omitempty"`
 	Footer     string  `json:"footer,omitempty"`
 	Fields     []Field `json:"fields,omitempty"`
-	
+
 }
 
 type Field struct {
@@ -114,7 +114,7 @@ func main() {
 				AuthorName: envOr(EnvGithubActor, ""),
 				AuthorLink: "http://github.com/" + os.Getenv(EnvGithubActor),
 				AuthorIcon: "http://github.com/" + os.Getenv(EnvGithubActor) + ".png?size=32",
-				Footer: "<https://github.com/rtCamp/github-actions-library|Powered By rtCamp's GitHub Actions Library>",
+				Footer: "<https://github.com/drewngyen/action-slack-notify|drewgyen>",
 				Fields: fields,
 			},
 		},
